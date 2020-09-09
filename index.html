@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyConf Hyderabad 2020</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Mono";
+        font-style: normal;
+        height: 100%;
+      }
+      .menu-wrapper {
+        border: 0.1rem solid rgb(20, 30, 280);
+        background-color: #ffffff;
+      }
+      .menu-wrapper nav {
+        max-width: 50rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .menu-wrapper nav a {
+        padding: 1.5rem 1.8125rem 1.625rem;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: orange;
+        text-decoration: none;
+      }
+      .main {
+        background-image: url(./BG-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(4px);
+        justify-content: space-evenly;
+        align-items: center;
+        height: 92.3vh;
+      }
+      .wrapper img {
+        width: 75%;
+      }
+      .info {
+        color: #fff;
+        font-size: 1.125rem;
+        padding: 0.3rem;
+        margin: 0.6rem;
+        display: flex;
+        align-items: center;
+      }
+      .cta {
+        background-color: rgba(255, 165, 0, 0.8);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        text-decoration: none;
+        padding: 0.8rem 1rem 0.8rem 1rem;
+        border-radius: 0.3rem;
+        display: inline-block;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-wrapper">
+      <nav>
+        <a href="#"> About </a>
+        <a href="#"> CFP </a>
+        <a href="#"> COC </a>
+      </nav>
+    </div>
+    <main class="main">
+      <div class="wrapper">
+        <img src="./Pyconf 2020-03.svg" alt="Pyconf Hyderabad 2020" />
+        <div class="info">
+          <span>12-13 December 2020 &middot; Virtual</span>
+        </div>
+        <div class="call-for-speakers">
+          <center>
+            <a class="cta" href="#">Call for Speakers</a>
+          </center>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
