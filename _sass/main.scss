@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Mono";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   height: 100%;
 }
@@ -29,15 +29,22 @@ body {
     width: 75%;
   }
 }
+
+@media (max-width: 768px) {
+  .wrapper img {
+    width: 100%;
+  }
+}
 // info section text
 .info {
+  background: #fff;
   color: black;
-  font-size: 2rem;
-  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
   margin: 0.6rem;
   display: flex;
   align-items: center;
-  background: #fff;
 }
 .cta {
   background-color: rgba(255, 165, 0, 0.8);
@@ -52,6 +59,7 @@ body {
   border-radius: 0.3rem;
   display: inline-block;
   align-items: center;
+  cursor: not-allowed;
 }
 
 // style import for flexible template
