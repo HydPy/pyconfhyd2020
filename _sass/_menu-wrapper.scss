@@ -1,0 +1,20 @@
+.menu-wrapper {
+  border-bottom: 0.1rem solid orange;
+  background-color: #032f4e;
+}
+.menu-wrapper nav {
+  max-width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.menu-wrapper nav a {
+  padding: 1.5rem 1.8125rem 1.625rem;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: orange;
+  text-decoration: none;
+}
