@@ -1,7 +1,7 @@
 language: ruby
 branches:
   only:
-    - master
+    - main
 before_script:
   - chmod +x deploy.sh
 script:
