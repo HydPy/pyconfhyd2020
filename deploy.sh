@@ -12,7 +12,7 @@ commit_changes() {
   mkdir 2020
   cp -rf ../_site/* 2020/
   git add .
-  git commit -m "Travis build: pyconfhyd2020-$TRAVIS_BUILD_NUMBER"
+  git commit -m "Travis build: pyconfhyd2020_$TRAVIS_BUILD_NUMBER"
 }
 
 push_files_to_github() {
