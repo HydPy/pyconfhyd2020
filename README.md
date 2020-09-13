@@ -1,4 +1,4 @@
-# Python Conference Hyderabad 2019
+# Python Conference Hyderabad 2020
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors)
 
