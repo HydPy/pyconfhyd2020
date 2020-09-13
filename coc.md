@@ -23,17 +23,12 @@ title: Code of conduct
 
 <p><b>Contact Information</b></p>
 
-<p>If you are being harassed, or notice that someone else is being harassed, or have any other concerns, please contact any of the conference volunteer. Conference volunteer will be wearing “PyConf Hyderabad Volunteer” badges.
-You may also ask to be put in touch with the conference chair - Manivannan Elangovan</p>
-
-<p>If the matter is especially urgent, please contact any of these individuals for reporting CoC violations:</p>
+<p>If you are being harassed, or notice that someone else is being harassed, or have any other concerns, please contact any of these individuals for reporting CoC violations:</p>
 
 <p>Ramanathan Ramakrishnamoorthy<br />
 Sanchit Balchandani<br />
 
 In case you are not able to locate a conference volunteer or the mentioned people you can directly call Ramanathan Ramakrishnamoorthy at this mobile no - <b>+919398046169</b>
-
-<p>Conference volunteers will be happy to help participants contact venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
 
 <p><b>License</b><br />
 This Code of Conduct was forked from Pycon India Conference under a Creative Commons Attribution 3.0 Unported License.
