@@ -1,0 +1,24 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head section  -->
+  {% include head.html %}
+
+  <body>
+    <!-- header section -->
+    {% include navbar.html %}
+
+    <section class="section flexible">
+      <div class="container">{{ content }}</div>
+    </section>
+
+    <!-- footer section -->
+    {% comment %} {% include footer.html %} {% endcomment %}
+
+    <!-- scripts include -->
+    {% comment %} {% include scripts.html %} {% endcomment %}
+  </body>
+</html>

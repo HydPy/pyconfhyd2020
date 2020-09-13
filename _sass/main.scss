@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  height: 100%;
+}
+
+// container styles
+@import "container";
+
+// menu wrapper - navbar
+@import "menu-wrapper";
+
+// main section - hero banner on homepage
+.main {
+  background-image: url(../../assets/images/bg/BG-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(4px);
+  justify-content: space-evenly;
+  align-items: center;
+  height: 92.3vh;
+  img {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper img {
+    width: 100%;
+  }
+}
+// info section text
+.info {
+  background: #fff;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin: 0.6rem;
+  display: flex;
+  align-items: center;
+}
+.cta {
+  background-color: rgba(255, 165, 0, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-decoration: none;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  border-radius: 0.3rem;
+  display: inline-block;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+// style import for flexible template
+@import "flexible";
