@@ -1,7 +1,5 @@
 # Python Conference Hyderabad 2019
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors)
-
 ### About Conference
 
 PyConf Hyderabad is the regional gathering for the community that uses and develops the open-source Python programming language. PyConf Hyderabad is organised by the Hyderabad Python User Group (HydPy) for the community. This conference is about sharing of knowledge, experience and allowing the growth of ideas which could lead to spillover of stronger ties between developers and users of Python with human interactions.
@@ -32,9 +30,3 @@ To start Jekyll run:
 ```
 
 Site will be available at http://127.0.0.1:4000/ or http://localhost:4000/ (on Windows)
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
