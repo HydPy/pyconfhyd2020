@@ -16,7 +16,7 @@ commit_changes() {
 }
 
 push_files_to_github() {
-  git remote add origin-pages https://${GH_TOKEN}@github.com/HydPy/hydpy.github.io.git
+  git remote add origin-pages https://GH_TOKEN@github.com/HydPy/hydpy.github.io.git
   git push origin-pages master
 }
 
