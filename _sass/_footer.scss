@@ -1,0 +1,22 @@
+footer {
+  &.footer-section {
+    padding: 2rem 0;
+  }
+  .footer-container {
+    max-width: 58rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      a {
+        color: $secondary-color;
+        padding-bottom: 0.8rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
