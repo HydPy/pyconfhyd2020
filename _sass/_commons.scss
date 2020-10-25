@@ -1,0 +1,23 @@
+hr {
+  border-color: $secondary-color;
+  opacity: 0.6;
+  margin: 2.4rem;
+}
+
+.content-wrapper {
+  margin: 3.125rem auto;
+  max-width: 75%;
+  line-height: 2.5rem;
+}
+
+.wrapper {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 70rem;
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+}

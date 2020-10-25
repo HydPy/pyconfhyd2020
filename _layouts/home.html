@@ -6,6 +6,11 @@ layout: compress
 <html lang="en">
   {% include head.html %}
   <body>
-    {% include navbar.html %} {% include hero-banner.html %} {{ content }}
+    {% include navbar.html %} {% include hero-banner.html %}
+    <div class="content-wrapper">
+      {% include speakers.html %}
+      <hr />
+    </div>
+    {% comment %} {% include footer.html %} {% endcomment %}
   </body>
 </html>

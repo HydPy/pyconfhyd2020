@@ -1,0 +1,24 @@
+<section id="speakers" class="wrapper speakers-section">
+  <h2>Speakers</h2>
+  <div class="speaker-container">
+    {% for speaker in site.data.speakers %}
+    <div class="speaker-card">
+      <div class="speaker-card__img">
+        <a
+          target="_blank"
+          rel="noopener"
+          href="{{speaker.website}}"
+          itemprop="image"
+        >
+          <img src="{{speaker.image}}" alt="{{speaker.name}}" width="240" />
+        </a>
+      </div>
+      <div class="speaker-card__name">
+        <h3>{{speaker.name}}</h3>
+      </div>
+      <div class="speaker-card__title">{{speaker.title}}</div>
+      <div class="speaker-card__description">{{speaker.description}}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

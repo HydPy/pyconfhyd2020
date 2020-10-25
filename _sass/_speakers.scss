@@ -1,0 +1,29 @@
+.speakers-section {
+  .speaker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .speaker-card {
+      max-width: 24rem;
+      padding: 1rem;
+      margin: 1rem 0;
+      &__img {
+        img {
+          object-fit: cover;
+          border-radius: 50%;
+          box-shadow: 0 1px 8px #ccc;
+        }
+      }
+      &__name {
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 400;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+      &__title {
+      }
+    }
+  }
+}
