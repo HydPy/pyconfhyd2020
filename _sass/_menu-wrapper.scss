@@ -18,3 +18,9 @@
   color: orange;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .menu-wrapper nav a {
+    padding: 1rem;
+  }
+}
