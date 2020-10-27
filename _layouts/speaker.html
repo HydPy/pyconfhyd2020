@@ -1,0 +1,29 @@
+{% comment %} /:speakers/:speaker-name {% endcomment %}
+<html lang="en">
+  {% include head.html %} {% assign speaker = page %}
+  <body>
+    {% include navbar.html %}
+    <div class="content-wrapper">
+      <section id="speakers" class="wrapper speakers-section">
+        <div class="speaker-container">
+          <div class="speaker-card">
+            <div class="speaker-card__img">
+              <a href="{{speaker.website}}" itemprop="image">
+                <img
+                  src="{{speaker.image | relative_url}}"
+                  alt="{{speaker.name}}"
+                  width="240"
+                />
+              </a>
+            </div>
+            <div class="speaker-card__name">
+              <h3>{{speaker.name}}</h3>
+            </div>
+            <div class="speaker-card__title">{{speaker.title}}</div>
+          </div>
+        </div>
+      </section>
+      {{content}}
+    </div>
+  </body>
+</html>

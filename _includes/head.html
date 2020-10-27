@@ -7,8 +7,12 @@
     rel="stylesheet"
   />
   <!-- Preload assets-->
-  <link rel="preload" href="{{ site.baseurl }}assets/css/main.css" as="style" />
+  <link
+    rel="preload"
+    href="{{ 'assets/css/main.css' | relative_url }}"
+    as="style"
+  />
 
   <!-- main CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/main.css" />
+  <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
 </head>
