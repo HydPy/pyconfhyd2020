@@ -28,6 +28,18 @@ sass:
   sass_dir: _sass
   style: compressed
 
+collections:
+  speakers:
+    output: true
+    permalink: /:collection/:title
+
+defaults:
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
