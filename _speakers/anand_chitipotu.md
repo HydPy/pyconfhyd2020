@@ -1,6 +1,6 @@
 ---
 name: Anand Chitipotu
-title: Co-founder at Rorodata
+title: Software Consultant & Trainer
 website: https://anandology.com/
 image: assets/images/speakers/anandc.jfif
 ---
