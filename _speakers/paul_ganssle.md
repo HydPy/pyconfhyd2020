@@ -1,6 +1,6 @@
 ---
 name: Paul Ganssle
-title: Senior Software Engineer @ Google
+title: CPython Core Developer
 website: https://ganssle.io/
 image: assets/images/speakers/pganssle.jpg
 ---
