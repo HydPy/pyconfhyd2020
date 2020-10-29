@@ -4,7 +4,7 @@
     {% for speaker in site.speakers %}
     <div class="speaker-card">
       <div class="speaker-card__img">
-        <a href="{{speaker.url}}" itemprop="image">
+        <a href="{{speaker.url | relative_url}}" itemprop="image">
           <img
             src="{{speaker.image | relative_url}}"
             alt="{{speaker.name}}"
