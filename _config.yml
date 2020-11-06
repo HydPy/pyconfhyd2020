@@ -32,6 +32,8 @@ collections:
   speakers:
     output: true
     permalink: /:collection/:title
+  community_partners:
+    output: false
 
 defaults:
   - scope:

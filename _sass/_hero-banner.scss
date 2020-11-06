@@ -24,6 +24,9 @@
   padding: 0.5rem 1rem;
   margin: 0.6rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .call-for-speakers {
