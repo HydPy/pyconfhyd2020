@@ -1,5 +1,5 @@
 ---
 title: "ChennaiPy"
-logo : "assets/images/community-partners/chennaipy.png"
+logo : "assets/images/community_partners/chennaipy.png"
 twitter : "chennaipy"
 ---
