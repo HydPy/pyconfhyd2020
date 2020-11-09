@@ -1,0 +1,17 @@
+.no-shadow{
+	box-shadow: none !important;
+}
+
+.no-radius{
+	border-radius: 0 !important;
+}
+
+.object-contain{
+	object-fit: contain !important;
+}
+
+.simple-image{
+	@extend .no-shadow;
+	@extend .no-radius;
+	object-fit: none !important;
+}
