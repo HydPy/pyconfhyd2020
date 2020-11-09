@@ -9,6 +9,21 @@ footer {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    .copyright-details {
+      text-align: center;
+      padding-top: 0.6875rem;
+    }
+    .social-media-details {
+      padding-top: 1.1875rem;
+      display: flex;
+      justify-content: space-between;
+      .sm-div {
+        margin-right: 2rem;
+      }
+      img {
+        width: 1.75rem;
+      }
+    }
     .footer-links {
       display: flex;
       flex-direction: column;
