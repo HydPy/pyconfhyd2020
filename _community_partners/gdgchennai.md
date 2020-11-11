@@ -1,5 +1,5 @@
 ---
 title : "GDG Chennai"
-logo : "assets/images/community_partners/gdgchennai.jpg"
+logo : "assets/images/community_partners/gdgchennai.png"
 twitter : "GDGChennai"
 ---
