@@ -2,7 +2,7 @@
 name: Anand Chitipotu
 title: Software Consultant & Trainer
 website: https://anandology.com/
-image: assets/images/speakers/anandc.jfif
+image: assets/images/speakers/anandc-no-bg.png
 ---
 
 Anand Chitipothu is a passionate programmer and long-time Pythonista. He has been crafting beautiful software for nearly two decades.

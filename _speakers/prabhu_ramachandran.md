@@ -2,9 +2,9 @@
 name: Prabhu Ramachandran
 title: Faculty Member, Department of Aerospace Engineering, IIT Bombay
 website: https://www.aero.iitb.ac.in/~prabhu/
-image: assets/images/speakers/prabhu_ramachandran.png
+image: assets/images/speakers/prabhu_ramachandran-no-bg.png
 ---
-
+		
 Prabhu Ramachandran is a faculty member at the department of aerospace
 engineering, IIT Bombay. His research interests include particle methods for
 computational fluid dynamics, scientific computing, parallel and

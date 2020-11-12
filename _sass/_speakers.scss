@@ -11,13 +11,25 @@
         img {
           object-fit: cover;
           border-radius: 50%;
-          box-shadow: 0 1px 8px #ccc;
+          transition: all 0.9s ease;
+          &.img-special{
+             box-shadow: 0 1px 8px #ccc;
+            &:hover, &:focus{
+              background: rgba(255, 218, 0, 0.6);
+              box-shadow: 2px 2px 9px 3px rgba(128,128,128,.81);
+              filter: drop-shadow(0 0 10px #ccc);
+            }
+          }
+          &.img-with-bg{
+            box-shadow: 0 1px 8px #ccc;
+            background: rgba(255, 218, 0, 0.6);
+          }
         }
       }
       &__name {
         h3 {
           font-size: 1.8rem;
-          font-weight: 400;
+          font-weight: 600;
           margin-top: 0;
           margin-bottom: 0;
         }
