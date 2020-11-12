@@ -1,9 +1,17 @@
+// elements
+h2.special-bg{
+  background: $heading-special-bg;
+  padding: 1.2rem;
+}
+
 hr {
   border-color: $secondary-color;
   opacity: 0.6;
   margin: 2.4rem;
 }
 
+
+// sections
 .content-wrapper {
   margin: 3.125rem auto;
   max-width: 75%;
@@ -19,5 +27,24 @@ hr {
     padding-bottom: 1rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
+  }
+}
+
+// buttons
+.cta {
+  background-color: $cta-btn-bg;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-decoration: none;
+  margin: 0.8rem 1rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  &:hover, &:focus{
+    background-color: lighten($cta-btn-bg, 10);
+    transform: scale(1.05);
   }
 }

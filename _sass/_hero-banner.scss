@@ -7,6 +7,7 @@
   height: 92.3vh;
   img {
     width: 60%;
+    filter: drop-shadow(0 0 10px #000);
   }
 }
 
@@ -33,17 +34,4 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  .cta {
-    background-color: rgb(255, 165, 0);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    text-decoration: none;
-    padding: 0.8rem 1rem 0.8rem 1rem;
-    border-radius: 0.3rem;
-    margin: 0.8rem 1rem;
-  }
 }
