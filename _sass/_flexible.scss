@@ -4,4 +4,21 @@
   padding-bottom: 4rem;
   line-height: 1.8;
   font-size: 1.4em;
+  h2{
+  	@extend .special-bg;
+  }
+  &.wrapper{
+  	p{
+  		text-align: left;
+  	}
+  }
 }
+
+
+// $Mobile {
+//   .section.flexible{
+//     .container{
+//       width: auto;
+//     }
+//   }
+// }

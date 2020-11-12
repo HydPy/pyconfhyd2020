@@ -1,9 +1,17 @@
+// elements
+h2.special-bg{
+  background: $heading-special-bg;
+  padding: 1.2rem;
+}
+
 hr {
   border-color: $secondary-color;
   opacity: 0.6;
   margin: 2.4rem;
 }
 
+
+// sections
 .content-wrapper {
   margin: 3.125rem auto;
   max-width: 75%;
