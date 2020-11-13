@@ -1,0 +1,36 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      - name: Build
+        run: |
+          docker run \
+          --rm --volume="${{ github.workspace }}:/srv/jekyll" \
+          -p 4000:4000 \
+          --volume="${{ github.workspace }}/vendor/bundle:/usr/local/bundle" \
+          --env JEKYLL_ENV=production jekyll/jekyll:3.8 \
+          /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+
+      - name: Deploy
+        run: |
+          git config --global user.email "contact@hydpy.org"
+          git config --global user.name "GitHub Action"
+          git clone https://github.com/HydPy/hydpy.github.io.git pyconf-websites
+          cd pyconf-websites
+          rm -rf 2020
+          mkdir 2020
+          cp -rf ../_site/* 2020/
+          git add .
+          git commit -m "Github Actions: pyconfhyd2020-${GITHUB_RUN_ID}"
+          git remote add origin-pages https://inovizz:${{ secrets.API_TOKEN_GITHUB }}@github.com/HydPy/hydpy.github.io.git
+          git push origin-pages master

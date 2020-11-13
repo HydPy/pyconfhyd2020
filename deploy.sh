@@ -1,8 +1,8 @@
 #!/bin/sh
 
 setup_git() {
-  git config --global user.email "travis@travis-ci.org"
-  git config --global user.name "Travis CI"
+  git config --global user.email "github-actions@hydpy.org"
+  git config --global user.name "Github Actions"
 }
 
 commit_changes() {
@@ -12,7 +12,7 @@ commit_changes() {
   mkdir 2020
   cp -rf ../_site/* 2020/
   git add .
-  git commit -m "Travis build: pyconfhyd2020-$TRAVIS_BUILD_NUMBER"
+  git commit -m "Githb Actions Build: pyconfhyd2020-${GITHUB_RUN_ID}"
 }
 
 push_files_to_github() {
