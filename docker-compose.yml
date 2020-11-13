@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  jekyll:
+    image: jekyll/jekyll:3.8
+    ports:
+      - "4000:4000"
+    volumes:
+      - "./:/srv/jekyll"
+      - "$PWD/vendor/bundle:/usr/local/bundle"
+    environment:
+      - JEKYLL_ENV=production
+    command: jekyll serve
