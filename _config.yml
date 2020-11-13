@@ -55,3 +55,4 @@ exclude:
   - vendor/ruby/
   - README.md
   - deploy.sh
+  - docker-compose.yml
