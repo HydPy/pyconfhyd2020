@@ -21,14 +21,7 @@
   speaker: Venkata Pingali
   type: talk
   duration: 30
-
-- title: Memory Management in Python
-  track: 1
-  date: 5th Dec
-  time: "12:45"
-  speaker: Jatin Goel
-  type: talk
-  duration: 30
+  half: true
 
 - title: TBA
   track: 2
@@ -37,86 +30,102 @@
   speaker: TBA
   type: talk
   duration: 60
+  full: true
+
+- title: Memory Management in Python
+  track: 1
+  date: 5th Dec
+  time: "12:45"
+  speaker: Jatin Goel
+  type: talk
+  duration: 30
+  half: true
 
 - title: Lunch Break
   track: all
   date: 5th Dec
-  time: "1:15"
+  time: "13:15"
   type: talk
   duration: 45
 
 - title: Lightning Talks
   track: all
   date: 5th Dec
-  time: "2:00"
+  time: "14:00"
   type: talk
   duration: 30
 
 - title: Use of predictive analysis in the world of cricket - Fantasy XI team prediction for IPL 2020
   track: 1
   date: 5th Dec
-  time: "2:35"
+  time: "14:35"
   type: talk
   speaker: Netali Agarwal
   duration: 30
+  half: true
 
 - title: "Distributed Tracing : New DevOps Foundation"
   track: 1
   date: 5th Dec
-  time: "3:10"
+  time: "15:10"
   type: talk
   speaker: Jayesh Bapu Ahire
   duration: 30
+  half: true
 
 - title: Let's get serious about Kubernetes!
   track: 2
   date: 5th Dec
-  time: "2:35"
+  time: "14:35"
   type: tutorial
   speaker: Nabarun Pal
   duration: 70
+  full: true
 
 - title: Fastapi — it’s like flask but better?
   track: 1
   date: 5th Dec
-  time: "3:45"
+  time: "15:45"
   type: talk
   speaker: Ruslan Khyurri
   duration: 30
+  half: true
 
 - title: A story of Mosquitos, Satellite image and Deep learning models
   track: 1
   date: 5th Dec
-  time: "4:20"
+  time: "16:20"
   type: talk
   speaker: Ranjan Balappa
   duration: 30
+  half: true
 
 - title: Faster Python apps with open source APM
   track: 2
   date: 5th Dec
-  time: "3:45"
+  time: "15:45"
   type: tutorial
   speaker: Aravind Putrevu
-  duration: 75
+  duration: 60
+  full: true
 
 - title: Tea Break
   track: all
   date: 5th Dec
-  time: "4:50"
+  time: "16:50"
   duration: 10
 
 - title: Keynote
   track: all
   date: 5th Dec
-  time: "5:00"
+  time: "17:00"
   speaker: Paul Ganssle
   duration: 60
 
 - title: Closing Note - Day 1
   track: all
   date: 5th Dec
-  time: "6:00"
+  time: "18:00"
   duration: 05
 
 # 6th Dec
@@ -143,6 +152,7 @@
   speaker: Aniket Sinha
   type: talk
   duration: 30
+  half: true
 
 - title: TBA
   track: 1
@@ -151,6 +161,7 @@
   speaker: TBA
   type: talk
   duration: 30
+  half: true
 
 - title: Machine Learning on Decentralized Data using TensorFlow Federated
   track: 2
@@ -159,6 +170,7 @@
   speaker: Usha Rengaraju
   type: tutorial
   duration: 60
+  full: true
 
 - title: Lunch Break
   track: all
@@ -182,6 +194,7 @@
   speaker: Cheuk Ting Ho
   type: talk
   duration: 30
+  half: true
 
 - title: Normalizing User-Generated Text Data
   track: 1
@@ -190,6 +203,7 @@
   speaker: Piyush Makhija
   type: talk
   duration: 30
+  half: true
 
 - title: CI/CD for AWS Lambda functions
   track: 2
@@ -198,6 +212,7 @@
   speaker: Pawel Piwosz
   type: tutorial
   duration: 60
+  full: true
 
 - title: InfluxDb and it’s python client
   track: 1
@@ -206,6 +221,7 @@
   speaker: Saiyam Pathak
   type: talk
   duration: 30
+  half: true
 
 - title: "Generators, coroutines, and nanoservices: Understanding and using"
   track: 1
@@ -214,6 +230,7 @@
   speaker: Reuven Lerner
   type: talk
   duration: 30
+  half: true
 
 - title: Introducing FinancePy - A Python library for Valuation and Risk Management
   track: 2
@@ -222,6 +239,7 @@
   speaker: Dominic O'Kane
   type: tutorial
   duration: 60
+  full: true
 
 - title: Tea Break
   track: all
