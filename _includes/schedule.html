@@ -2,97 +2,144 @@
   {% assign dates = site.data.talks | map: 'date' | uniq %}
   <div class="page-details">
     <h2 class="special-bg" aria-label="schedule">Schedule</h2>
-    <div class="description" style="font-size: 1rem; margin-bottom: 1.5rem; margin-top: -1.5rem;">
-      All the times mentioned in the schedule are in Indian Standard Time (IST) timezone.
+    <div
+      class="description"
+      style="font-size: 1rem; margin-bottom: 1.5rem; margin-top: -1.5rem"
+    >
+      All the times mentioned in the schedule are in Indian Standard Time (IST)
+      timezone.
     </div>
     <div class="flex justify-between">
       <div class="flex justify-start dates">
         {% for date in dates %}
-          <div
-            class="date {% if forloop.first %}active{% endif %} hidden-sm"
-            data-target="#schedule-{{ date | replace:' ','-' }}"
-          >
-            {{ date }}
-          </div>
-          <div
-            class="date {% if forloop.first %}active{% endif %} show-sm"
-            data-target="#schedule-{{ date | replace:' ','-' }}-sm"
-          >
-            {{ date }}
-          </div>
+        <div
+          class="date {% if forloop.first %}active{% endif %} hidden-sm"
+          data-target="#schedule-{{ date | replace:' ','-' }}"
+        >
+          {{ date }}
+        </div>
+        <div
+          class="date {% if forloop.first %}active{% endif %} show-sm"
+          data-target="#schedule-{{ date | replace:' ','-' }}-sm"
+        >
+          {{ date }}
+        </div>
         {% endfor %}
       </div>
     </div>
 
-    {% for date in dates %}
-      {% assign times = site.data.talks | where: 'date', date | map: 'time' | uniq %}
-      <div
-        class="flex flex-column schedule-container {% if forloop.first %}active{% endif %} hidden-sm"
-        id="schedule-{{ date | replace:' ','-' }}"
-        style="margin-top: 0.5rem;"
-      >
-        {% for time in times %}
-          {% assign talks = site.data.talks | where: 'date', date | where: 'time', time %}
-          <div class="flex justify-start schedule-item">
-            <div class="schedule-time">
-              <span>{{ time }}</span>
+    <div class="flex flex-column schedule-container room-container hidden-sm">
+      <div class="flex justify-start schedule-item room-item">
+        <div class="schedule-time">
+          <span></span>
+        </div>
+        <div class="flex justify-start schedule-content" style="margin-top: 0.45rem; margin-bottom: 0.25rem;">
+          <div class="talk-content room-content">
+            <div class="talk-title">
+              Track 1
             </div>
-            <div class="flex justify-start schedule-content">
-              {% for talk in talks %}
-                <div
-                  class="talk-content
+          </div>
+          <div class="talk-content room-content">
+            <div class="talk-title">
+              Track 2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% for date in dates %} {% assign times = site.data.talks | where: 'date',
+    date | map: 'time' | uniq %}
+    <div
+      class="flex flex-column schedule-container {% if forloop.first %}active{% endif %} hidden-sm"
+      id="schedule-{{ date | replace:' ','-' }}"
+      style="margin-top: 0.5rem"
+    >
+      {% for time in times %} {% assign talks = site.data.talks | where: 'date',
+      date | where: 'time', time %}
+      <div class="flex justify-start schedule-item">
+        <div class="schedule-time">
+          <span>{{ time }}</span>
+        </div>
+        <div class="flex justify-start schedule-content">
+          {% for talk in talks %}
+          <div
+            class="talk-content
                     {% if talk.type == 'keynote' or talk.type == 'address' %}
                       special
                     {% endif %}
                     track-{{ talk.track }}"
-                    {% if talk.date== '3rd Oct' and talk.time == '13:55' and talk.duration == 30 %}
-                      style="height: calc(200% - 1.3rem);"
-                    {% endif %}
-                    {% if talk.time == '14:10' %}
-                      style="margin-left: auto;"
-                    {% endif %}>
-                  <div class="talk-title" >
-                    <a {% if talk.hyperlink %}href="{{ talk.hyperlink }}"{% endif %}>{{ talk.title }}</a>
-                    <small class="talk-speaker">
-                      {{ talk.speaker }}
-                    </small>
-                  </div>
-                </div>
-              {% endfor %}
+            {%
+            if
+            talk.full
+            %}
+            style="
+              height: calc(200% - 2.7rem);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              {% if talk.time == "3:45" or talk.time == "15:45" and talk.duration == 60 %}
+              min-height: 10rem;
+            {% endif %}
+            "
+            {%
+            endif
+            %}
+            {%
+            if
+            talk.half
+            %}
+            style="width: calc(50% - 3.7rem)"
+            {%
+            endif
+            %}
+          >
+            <div class="talk-title">
+              <a {% if talk.hyperlink %}href="{{ talk.hyperlink }}" {% endif %}
+                >{{ talk.title }}</a
+              >
+              <small class="talk-speaker"> {{ talk.speaker }} </small>
             </div>
           </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
-      <div
-        class="schedule-container {% if forloop.first %}active{% endif %} show-sm"
-        id="schedule-{{ date | replace:' ','-' }}-sm"
-      >
-        {% for time in times %}
-          {% assign talks = site.data.talks | where: 'date', date | where: 'time', time %}
-          <div class="schedule-item">
-            <div class="schedule-content">
-              {% for talk in talks %}
-              <div
-                class="talk-content
+      {% endfor %}
+    </div>
+    <div
+      class="schedule-container {% if forloop.first %}active{% endif %} show-sm"
+      id="schedule-{{ date | replace:' ','-' }}-sm"
+    >
+      {% for time in times %} {% assign talks = site.data.talks | where: 'date',
+      date | where: 'time', time %}
+      <div class="schedule-item">
+        <div class="schedule-content">
+          {% for talk in talks %}
+          <div
+            class="talk-content
                   {% if talk.type == 'keynote' or talk.type == 'address' %}
                     special
                   {% endif %}
-                  track-{{ talk.track }}">
-                <div class="talk-title">
-                  <a {% if talk.hyperlink %}href="{{ talk.hyperlink }}"{% endif %}>{{ talk.title }}</a>
-                  <small class="talk-speaker">
-                    {{ talk.speaker }} {% if talk.track and talk.track != 'all' %}| <strong>Track: {{ talk.track }} </strong> {% endif %}
-                  </small>
-                </div>
-                <div class="talk-time">
-                  <span>{{ time }}</span>
-                </div>
-              </div>
-              {% endfor %}
+                  track-{{ talk.track }}"
+          >
+            <div class="talk-title">
+              <a {% if talk.hyperlink %}href="{{ talk.hyperlink }}" {% endif %}
+                >{{ talk.title }}</a
+              >
+              <small class="talk-speaker">
+                {{ talk.speaker }} {% if talk.track and talk.track != 'all' %}|
+                <strong>Track: {{ talk.track }} </strong> {% endif %}
+              </small>
+            </div>
+            <div class="talk-time">
+              <span>{{ time }}</span>
             </div>
           </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
+      {% endfor %}
+    </div>
     {% endfor %}
   </div>
 </section>
