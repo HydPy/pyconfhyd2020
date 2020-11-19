@@ -1,0 +1,247 @@
+# # Schedule for 5th Dec
+
+- title: Opening Note - Day 1
+  track: all
+  date: 5th Dec
+  time: "11:00"
+  duration: 5
+
+- title: Keynote
+  track: all
+  date: 5th Dec
+  time: "11:05"
+  type: keynote
+  speaker: Prabhu Ramachandran
+  duration: 60
+
+- title: Managing Operational Knowledge in Feature Stores
+  track: 1
+  date: 5th Dec
+  time: "12:10"
+  speaker: Venkata Pingali
+  type: talk
+  duration: 30
+
+- title: Memory Management in Python
+  track: 1
+  date: 5th Dec
+  time: "12:45"
+  speaker: Jatin Goel
+  type: talk
+  duration: 30
+
+- title: TBA
+  track: 2
+  date: 5th Dec
+  time: "12:10"
+  speaker: TBA
+  type: talk
+  duration: 60
+
+- title: Lunch Break
+  track: all
+  date: 5th Dec
+  time: "1:15"
+  type: talk
+  duration: 45
+
+- title: Lightning Talks
+  track: all
+  date: 5th Dec
+  time: "2:00"
+  type: talk
+  duration: 30
+
+- title: Use of predictive analysis in the world of cricket - Fantasy XI team prediction for IPL 2020
+  track: 1
+  date: 5th Dec
+  time: "2:35"
+  type: talk
+  speaker: Netali Agarwal
+  duration: 30
+
+- title: "Distributed Tracing : New DevOps Foundation"
+  track: 1
+  date: 5th Dec
+  time: "3:10"
+  type: talk
+  speaker: Jayesh Bapu Ahire
+  duration: 30
+
+- title: Let's get serious about Kubernetes!
+  track: 2
+  date: 5th Dec
+  time: "2:35"
+  type: tutorial
+  speaker: Nabarun Pal
+  duration: 70
+
+- title: Fastapi — it’s like flask but better?
+  track: 1
+  date: 5th Dec
+  time: "3:45"
+  type: talk
+  speaker: Ruslan Khyurri
+  duration: 30
+
+- title: A story of Mosquitos, Satellite image and Deep learning models
+  track: 1
+  date: 5th Dec
+  time: "4:20"
+  type: talk
+  speaker: Ranjan Balappa
+  duration: 30
+
+- title: Faster Python apps with open source APM
+  track: 2
+  date: 5th Dec
+  time: "3:45"
+  type: tutorial
+  speaker: Aravind Putrevu
+  duration: 75
+
+- title: Tea Break
+  track: all
+  date: 5th Dec
+  time: "4:50"
+  duration: 10
+
+- title: Keynote
+  track: all
+  date: 5th Dec
+  time: "5:00"
+  speaker: Paul Ganssle
+  duration: 60
+
+- title: Closing Note - Day 1
+  track: all
+  date: 5th Dec
+  time: "6:00"
+  duration: 05
+
+# 6th Dec
+- title: Opening Note - Day 2
+  track: all
+  date: 6th Dec
+  time: "11:00"
+  type: note
+  speaker: Ramanathan Ramakrishnamoorthy
+  duration: 05
+
+- title: Keynote
+  track: all
+  date: 6th Dec
+  time: "11:05"
+  type: keynote
+  speaker: Parul Pandey
+  duration: 60
+
+- title: PEG Parser
+  track: 1
+  date: 6th Dec
+  time: "12:10"
+  speaker: Aniket Sinha
+  type: talk
+  duration: 30
+
+- title: TBA
+  track: 1
+  date: 6th Dec
+  time: "13:20"
+  speaker: TBA
+  type: talk
+  duration: 30
+
+- title: Machine Learning on Decentralized Data using TensorFlow Federated
+  track: 2
+  date: 6th Dec
+  time: "12:10"
+  speaker: Usha Rengaraju
+  type: tutorial
+  duration: 60
+
+- title: Lunch Break
+  track: all
+  date: 6th Dec
+  time: "13:15"
+  type: break
+  duration: 45
+
+- title: Deploying ML solutions with low latency in Python
+  track: all
+  date: 6th Dec
+  time: "14:00"
+  type: talk
+  speaker: Aditya Lohia
+  duration: 30
+
+- title: How to Mock Well in Tests - Traps and Pitfalls When Using Mock and Pytest
+  track: 1
+  date: 6th Dec
+  time: "14:35"
+  speaker: Cheuk Ting Ho
+  type: talk
+  duration: 30
+
+- title: Normalizing User-Generated Text Data
+  track: 1
+  date: 6th Dec
+  time: "15:10"
+  speaker: Piyush Makhija
+  type: talk
+  duration: 30
+
+- title: CI/CD for AWS Lambda functions
+  track: 2
+  date: 6th Dec
+  time: "14:35"
+  speaker: Pawel Piwosz
+  type: tutorial
+  duration: 60
+
+- title: InfluxDb and it’s python client
+  track: 1
+  date: 6th Dec
+  time: "15:45"
+  speaker: Saiyam Pathak
+  type: talk
+  duration: 30
+
+- title: "Generators, coroutines, and nanoservices: Understanding and using"
+  track: 1
+  date: 6th Dec
+  time: "16:20"
+  speaker: Reuven Lerner
+  type: talk
+  duration: 30
+
+- title: Introducing FinancePy - A Python library for Valuation and Risk Management
+  track: 2
+  date: 6th Dec
+  time: "15:45"
+  speaker: Dominic O'Kane
+  type: tutorial
+  duration: 60
+
+- title: Tea Break
+  track: all
+  date: 6th Dec
+  time: "16:50"
+  type: break
+  duration: 10
+
+- title: Keynote
+  track: all
+  date: 6th Dec
+  time: "17:00"
+  type: keynote
+  speaker: Anand Chitipotu
+  duration: 60
+
+- title: Closing Note - Day 2
+  track: all
+  date: 6th Dec
+  time: "18:00"
+  type: note
+  speaker: Ramanathan Ramakrishnamoorthy
+  duration: 05

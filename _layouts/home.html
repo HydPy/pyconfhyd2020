@@ -5,8 +5,26 @@
     {% include navbar.html %} {% include hero-banner.html %}
     <div class="content-wrapper">
       {% include speakers.html %}
+      {% include schedule.html %}
       {% include community_partners.html %}
     </div>
     {% include footer.html %}
+
+    <script type="text/javascript">
+    	document.querySelectorAll(".date").forEach(function(element) {
+			  element.addEventListener("click", function(e) {
+			    var schedule_id = e.target.attributes["data-target"].value;
+			    document.querySelectorAll(".schedule-container.active").forEach(function(element) {
+			      element.classList.remove("active");
+			    });
+			    document.querySelector(schedule_id).classList.add("active");
+			    document.querySelectorAll(".date.active").forEach(function(element) {
+			      element.classList.remove("active");
+			    });
+			    e.target.classList.add("active");
+			  })
+			})
+    </script>
+
   </body>
 </html>
