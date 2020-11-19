@@ -1,0 +1,213 @@
+/* reused from pycon india 2020 schedule */
+
+// Schedule rules
+.date {
+  font-weight: bold;
+  margin-right: 2rem;
+  cursor: pointer;
+
+  &.active {
+    color: $primary-color;
+    border-bottom: 4px solid $primary-color;
+  }
+  &.show-sm {
+    display: none;
+  }
+}
+
+.schedule-container {
+  display: none;
+  margin-top: 1rem;
+
+  &.active {
+    display: flex;
+  }
+  &.room-container {
+    display: flex;
+  }
+
+  &.show-sm {
+    display: none;
+  }
+  .schedule-item {
+    font-weight: bold;
+    text-align: left;
+
+    .schedule-time {
+      width: 10%;
+      padding-right: 1.5rem;
+      border-right: 1px solid #d6d6d6;
+      position: relative;
+
+      span {
+        width: 100%;
+        display: inline-block;
+        line-height: 1.5;
+      }
+
+      &:after {
+        content: " ";
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        position: absolute;
+        top: 1rem;
+        left: 100%;
+        margin-left: -4.5px;
+      }
+    }
+    &.room-item .schedule-time {
+      border: 0;
+      &:after {
+        content: None;
+      }
+    }
+    .schedule-content {
+      flex: 1;
+      margin: 0.65rem 0;
+      margin-left: 2rem;
+
+      .talk-content {
+        border-radius: 10px;
+        background: #f2f2f2;
+        padding: 0.75rem 1rem;
+        text-align: center;
+        width: calc(50% - 0.25rem);
+        margin-right: 0.5rem;
+
+        &.room-content {
+          border: 1px solid #000000;
+          padding: 0.35rem 1rem;
+        }
+
+        .talk-title {
+          line-height: rem-calc(22);
+          font-size: rem-calc(14);
+          a {
+            color: #000;
+            display: block;
+            text-decoration: none;
+            &[href]:hover {
+              text-decoration: underline;
+            }
+          }
+          .talk-speaker {
+            font-weight: normal;
+          }
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        &.special {
+          font-size: rem-calc(16);
+          line-height: rem-calc(28);
+          background: $primary-color;
+          color: #fff;
+          margin-right: 0;
+          width: 100%;
+          .talk-title a {
+            color: #fff;
+          }
+        }
+
+        &.track-all {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// Responsive rules
+
+@media (max-width: 768px) {
+  .flex {
+    display: block;
+
+    &.dates {
+      display: flex;
+    }
+  }
+
+  .schedule-container {
+    &.hidden-sm {
+      display: none;
+    }
+
+    &.active.show-sm {
+      display: block;
+    }
+  }
+
+  .schedule-container .schedule-item .schedule-content {
+    margin-left: 0;
+    .talk-content {
+      width: calc(95% - 1rem);
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      .talk-title {
+        text-align: left;
+        flex: 1;
+      }
+      .talk-time {
+        margin-left: 1.75rem;
+      }
+
+      &.special {
+        width: calc(95% - 1rem);
+      }
+
+      &.track-all {
+        width: calc(95% - 1rem);
+      }
+    }
+  }
+
+  .date {
+    &.hidden-sm {
+      display: none;
+    }
+
+    &.show-sm {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #schedule .page-details {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-wrapper .page-details {
+    max-width: 90%;
+  }
+
+  .content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 512px) {
+  .page-wrapper .page-details {
+    max-width: 100%;
+  }
+
+  .content {
+    max-width: 95%;
+  }
+
+  .social-media-details {
+    div {
+      margin-left: rem-calc(16);
+      margin-right: rem-calc(16);
+    }
+  }
+}

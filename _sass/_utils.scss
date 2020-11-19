@@ -1,3 +1,22 @@
+.flex {
+  display: flex;
+  flex: 1;
+
+  &.flex-column {
+    flex-direction: column
+  }
+
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-start {
+    justify-content: flex-start;
+  }
+  &.justify-between {
+    justify-content: space-between;
+  }
+}
+
 .no-shadow{
 	box-shadow: none !important;
 }
