@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +8,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   height: 100%;
-  scroll-behavior: smooth;
 }
 
 @import "variables";
