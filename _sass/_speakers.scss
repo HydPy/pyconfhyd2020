@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    overflow-x: scroll;
+    justify-content: space-evenly;
     .speaker-card {
       max-width: 24rem;
       padding: 1rem;
@@ -32,7 +32,7 @@
       }
       &__name {
         h3 {
-          font-size: 1.8rem;
+          font-size: 1.4rem;
           font-weight: 600;
           margin-top: 0;
           margin-bottom: 0;
