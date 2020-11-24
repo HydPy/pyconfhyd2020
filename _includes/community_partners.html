@@ -2,7 +2,7 @@
 <h2 class="special-bg" aria-label="Community Partners">
   Community Partners
 </h2> 
-{% assign cpPerContainer = 4 %}
+{% assign cpPerContainer = 5 %}
 {% assign numContainers = site.community_partners | size | divided_by: cpPerContainer %}
 
 {% if site.community_partners.size | modulo: cpPerContainer > 0 %}
@@ -23,8 +23,8 @@
                 loading="lazy"
                 src="{{partner.logo | relative_url}}"
                 alt="{{partner.title}}"
-                width="200"
-                height="200"
+                width="150"
+                height="150"
               />
             </a>
           </div>
