@@ -1,6 +1,6 @@
 ---
-title : "Python Pune"
+title : "PythonPune"
 logo : "assets/images/community_partners/pythonpune.png"
 twitter : "PythonPune"
-website: "https://pune.python.org.in/"
+website: "https://pythonpune.in"
 ---
