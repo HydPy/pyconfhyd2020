@@ -1,24 +1,25 @@
-<section id="community-partners" class="wrapper cp-section">
-  <h2 class="special-bg" aria-label="Community Partners">
-    Community Partners
-  </h2>
-  <div class="cp-container">
-  {% for partner in site.community_partners %}
-          <div class="cp-card">
-            <div class="cp-card__img">
-              <a href="{{partner.website}}" itemprop="image" target="_blank" rel="noreferrer noopener">
-                <img
-                  class="img-special community-partners-img"
-                  loading="lazy"
-                  src="{{partner.logo | relative_url}}"
-                  alt="{{partner.title}}"
-                />
-              </a>
-            </div>
-            <div class="cp-card__title">
-              <span>{{partner.title}}</span>
-            </div>
-          </div>
-  {% endfor %}
+<section id="community-partners" class="wrapper speakers-section">
+  <h2 class="special-bg" aria-label="Community Partners">Community Partners</h2>
+ 
+ <div class="speaker-container">
+    {% for partner in site.community_partners %}
+    <div class="speaker-card">
+      <div class="speaker-card__img">
+        <a href="{{partner.website}}" itemprop="image" target="_blank" rel="noreferrer noopener">
+          <img
+            class="no-radius no-shadow object-contain"
+            loading="lazy"
+            src="{{partner.logo | relative_url}}"
+            alt="{{partner.title}}"
+            width="240"
+            height="240"
+          />
+        </a>
+      </div>
+      <div class="speaker-card__name">
+        <h3>{{partner.title}}</h3>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </section>
