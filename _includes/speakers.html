@@ -1,18 +1,7 @@
 <section id="speakers" class="wrapper speakers-section">
   <h2 class="special-bg" aria-label="keynote speakers">Keynote Speakers</h2>
-  {% assign speakersPerContainer = 2 %}
-  {% assign numContainers = site.speakers | size | divided_by: speakersPerContainer %}
-  
-  {% if site.speakers.size | modulo: speakersPerContainer > 0 %}
-    {% assign numContainers = numContainers | plus: 1 %}
-  {% endif %}
-  
-  {% assign endIndex = numContainers | minus: 1 %}
-  
-  {% for containerNum in (0..endIndex) %}
-  {% assign offset = containerNum | times: speakersPerContainer %}
   <div class="speaker-container">
-      {% for speaker in site.speakers limit: speakersPerContainer offset: offset %}
+    {% for speaker in site.speakers %}
       <div class="speaker-card">
         <div class="speaker-card__img">
           <a href="{{speaker.url | relative_url}}" itemprop="image">
@@ -21,8 +10,6 @@
               loading="lazy"
               src="{{speaker.image | relative_url}}"
               alt="{{speaker.name}}"
-              width="320"
-              height="320"
             />
           </a>
         </div>
@@ -33,5 +20,4 @@
       </div>
       {% endfor %}
   </div>
-{% endfor %}
 </section>

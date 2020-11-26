@@ -1,38 +1,24 @@
-<section id="community-partners" class="wrapper speakers-section">
-<h2 class="special-bg" aria-label="Community Partners">
-  Community Partners
-</h2> 
-{% assign cpPerContainer = 5 %}
-{% assign numContainers = site.community_partners | size | divided_by: cpPerContainer %}
-
-{% if site.community_partners.size | modulo: cpPerContainer > 0 %}
-    {% assign numContainers = numContainers | plus: 1 %}
-{% endif %}
-
-{% assign endIndex = numContainers | minus: 1 %}
-
-{% for containerNum in (0..endIndex) %}
-  {% assign offset = containerNum | times: cpPerContainer %}
-  <div class="speaker-container">
-      {% for partner in site.community_partners limit: cpPerContainer offset: offset %}
-        <div class="speaker-card">
-          <div class="speaker-card__img">
-            <a href="{{partner.website}}" itemprop="image" target="_blank" rel="noreferrer noopener">
-              <img
-                class="img-special community-partners-img"
-                loading="lazy"
-                src="{{partner.logo | relative_url}}"
-                alt="{{partner.title}}"
-                width="150"
-                height="150"
-              />
-            </a>
+<section id="community-partners" class="wrapper cp-section">
+  <h2 class="special-bg" aria-label="Community Partners">
+    Community Partners
+  </h2>
+  <div class="cp-container">
+  {% for partner in site.community_partners %}
+          <div class="cp-card">
+            <div class="cp-card__img">
+              <a href="{{partner.website}}" itemprop="image" target="_blank" rel="noreferrer noopener">
+                <img
+                  class="img-special community-partners-img"
+                  loading="lazy"
+                  src="{{partner.logo | relative_url}}"
+                  alt="{{partner.title}}"
+                />
+              </a>
+            </div>
+            <div class="cp-card__title">
+              <span>{{partner.title}}</span>
+            </div>
           </div>
-          <div class="speaker-card__name">
-            <h3>{{partner.title}}</h3>
-          </div>
-        </div>
-      {% endfor %}
+  {% endfor %}
   </div>
-{% endfor %}
 </section>
