@@ -9,7 +9,7 @@
     .speaker-card {
       width: 150px;
       height: 150px;
-      padding-bottom: 6rem;
+      padding: 0rem 2rem 6rem 2rem;
       line-height: 1.5rem !important;
 
       &__img {
@@ -46,7 +46,7 @@
         }
       }
       &__title {
-        font-size: smaller;
+        font-size: x-small;
         line-height: 1.4rem;
       }
     }
@@ -65,7 +65,7 @@
     .speaker-card {
       width: 320px;
       height: 320px;
-      padding-bottom: 5rem;
+      padding: 0rem 2rem 4rem 2rem;
 
       &__img {
         img {
@@ -95,6 +95,10 @@
           margin-top: 0;
           margin-bottom: 0;
         }
+      }
+      &__title {
+        font-size: small;
+        line-height: 1.8rem;
       }
     }
   }
