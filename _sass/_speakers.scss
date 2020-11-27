@@ -17,14 +17,14 @@
           object-fit: cover;
           border-radius: 50%;
           transition: all 0.9s ease;
+          width: 90%;
+          height: 90%;
+
           &.community-partners-img {
             border-radius: 5%;
           }
-          &.img-special{
-            width: 75%;
-            height: 70%;
+          &.img-special{           
             box-shadow: 0 1px 8px #ccc;
-             
             &:hover, &:focus{
               background: rgba(255, 218, 0, 0.6);
               box-shadow: 2px 2px 9px 3px rgba(128,128,128,.81);
@@ -47,6 +47,7 @@
       }
       &__title {
         font-size: smaller;
+        line-height: 1.4rem;
       }
     }
   }
@@ -64,16 +65,15 @@
     .speaker-card {
       width: 320px;
       height: 320px;
-      padding-left: 6rem;
-      padding-bottom: 2rem;
+      padding-bottom: 5rem;
 
       &__img {
         img {
           object-fit: cover;
           border-radius: 50%;
           transition: all 0.9s ease;
-          width: 75%;
-          height: 70%;
+          width: 90%;
+          height: 90%;
           &.img-special{
             box-shadow: 0 1px 8px #ccc;   
             &:hover, &:focus{
