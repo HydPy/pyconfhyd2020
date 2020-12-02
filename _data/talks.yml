@@ -23,12 +23,12 @@
   duration: 30
   half: true
 
-- title: TBA
+- title: Financial Tick Data Analysis with pandas
   track: 2
   date: 5th Dec
   time: "12:10"
-  speaker: TBA
-  type: talk
+  speaker: Yves Hilpisch and Jason Ramchandani
+  type: tutorial
   duration: 60
   full: true
 
