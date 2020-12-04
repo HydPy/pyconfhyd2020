@@ -3,8 +3,8 @@
 - title: Opening Note - Day 1
   track: all
   date: 5th Dec
-  time: "11:00"
-  duration: 5
+  time: "10:45"
+  duration: 20
 
 - title: Keynote
   track: all
@@ -127,15 +127,15 @@
   track: all
   date: 5th Dec
   time: "18:00"
-  duration: 05
+  duration: 15
 
 # 6th Dec
 - title: Opening Note - Day 2
   track: all
   date: 6th Dec
-  time: "11:00"
+  time: "10:45"
   type: note
-  duration: 05
+  duration: 20
 
 - title: Keynote
   track: all
@@ -261,4 +261,4 @@
   date: 6th Dec
   time: "18:00"
   type: note
-  duration: 05
+  duration: 15
