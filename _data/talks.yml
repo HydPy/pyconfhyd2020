@@ -22,6 +22,7 @@
   type: talk
   duration: 30
   half: true
+  hyperlink: speakers/venkata_pingali
 
 - title: TBA
   track: 2

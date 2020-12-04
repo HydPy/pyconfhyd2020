@@ -2,24 +2,26 @@
   <h2 class="special-bg" aria-label="keynote speakers">Keynote Speakers</h2>
   <div class="speaker-container">
     {% for speaker in site.speakers %}
-    <div class="speaker-card">
-      <div class="speaker-card__img">
-        <a href="{{speaker.url | relative_url}}" itemprop="image">
-          <img
-            class="img-special"
-            loading="lazy"
-            src="{{speaker.image | relative_url}}"
-            alt="{{speaker.name}}"
-            width="320"
-            height="320"
-          />
-        </a>
-      </div>
-      <div class="speaker-card__name">
-        <h3>{{speaker.name}}</h3>
-      </div>
-      <div class="speaker-card__title">{{speaker.title}}</div>
-    </div>
+      {% if speaker.type == 'keynote' %}
+        <div class="speaker-card">
+          <div class="speaker-card__img">
+            <a href="{{speaker.url | relative_url}}" itemprop="image">
+              <img
+                class="img-special"
+                loading="lazy"
+                src="{{speaker.image | relative_url}}"
+                alt="{{speaker.name}}"
+                width="320"
+                height="320"
+              />
+            </a>
+          </div>
+          <div class="speaker-card__name">
+            <h3>{{speaker.name}}</h3>
+          </div>
+          <div class="speaker-card__title">{{speaker.title}}</div>
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
 </section>
