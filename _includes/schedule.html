@@ -128,9 +128,8 @@
                 >{{ talk.title }}</a
               >
               <small class="talk-speaker">
-                <a {% if talk.hyperlink %} style="text-decoration: underline;" href="{{ talk.hyperlink }}" {% endif %}
-                >{{ talk.speaker }} {% if talk.track and talk.track != 'all' %} </a>
-                |
+                <a {% if talk.hyperlink %} style="text-decoration: underline; display: inline;" href="{{ talk.hyperlink }}" {% endif %}
+                >{{ talk.speaker }}</a> {% if talk.track and talk.track != 'all' %} |
                 <strong>Track: {{ talk.track }} </strong> {% endif %}
               </small>
             </div>

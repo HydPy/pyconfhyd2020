@@ -41,6 +41,7 @@
   type: talk
   duration: 30
   half: true
+  hyperlink: speakers/jatin_goel
 
 - title: Lunch Break
   track: all
@@ -64,6 +65,7 @@
   speaker: Netali Agarwal
   duration: 30
   half: true
+  hyperlink: speakers/netali_agarwal
 
 - title: "Distributed Tracing : New DevOps Foundation"
   track: 1
@@ -73,6 +75,7 @@
   speaker: Jayesh Bapu Ahire
   duration: 30
   half: true
+  hyperlink: speakers/jayesh_bapu_ahire
 
 - title: Let's get serious about Kubernetes!
   track: 2
@@ -82,6 +85,7 @@
   speaker: Nabarun Pal
   duration: 70
   full: true
+  hyperlink: speakers/nabarun_pal
 
 - title: Fastapi — it’s like flask but better?
   track: 1
@@ -91,6 +95,7 @@
   speaker: Ruslan Khyurri
   duration: 30
   half: true
+  hyperlink: speakers/ruslan_khyurri
 
 - title: A story of Mosquitos, Satellite image and Deep learning models
   track: 1
@@ -100,6 +105,7 @@
   speaker: Ranjan Balappa
   duration: 30
   half: true
+  hyperlink: speakers/ranjan_balappa
 
 - title: Faster Python apps with open source APM
   track: 2
@@ -109,6 +115,7 @@
   speaker: Aravind Putrevu
   duration: 60
   full: true
+  hyperlink: speakers/arvind_putrevu
 
 - title: Tea Break
   track: all
@@ -154,6 +161,7 @@
   type: talk
   duration: 30
   half: true
+  hyperlink: speakers/aniket_sinha
 
 - title: Python and FOSS in Education for Generation Z
   track: 1
@@ -163,8 +171,9 @@
   type: talk
   duration: 30
   half: true
+  hyperlink: speakers/gajendra_deshpande
 
-- title: Machine Learning on Decentralized Data using TensorFlow Federated
+- title: ML on Decentralized Data using TensorFlow Federated
   track: 2
   date: 6th Dec
   time: "12:10"
@@ -172,6 +181,7 @@
   type: tutorial
   duration: 60
   full: true
+  hyperlink: speakers/usha_rengaraju
 
 - title: Lunch Break
   track: all
@@ -187,6 +197,7 @@
   type: talk
   speaker: Aditya Lohia
   duration: 30
+  hyperlink: speakers/aditya_lohia
 
 - title: How to Mock Well in Tests - Traps and Pitfalls When Using Mock and Pytest
   track: 1
@@ -196,6 +207,7 @@
   type: talk
   duration: 30
   half: true
+  hyperlink: speakers/cheuk_ting_ho
 
 - title: Normalizing User-Generated Text Data
   track: 1
@@ -205,6 +217,7 @@
   type: talk
   duration: 30
   half: true
+  hyperlink: speakers/piyush_makhija
 
 - title: CI/CD for AWS Lambda functions
   track: 2
@@ -223,6 +236,7 @@
   type: talk
   duration: 30
   half: true
+  hyperlink: speakers/saiyam_pathak
 
 - title: "Generators, coroutines, and nanoservices: Understanding and using"
   track: 1
@@ -232,8 +246,9 @@
   type: talk
   duration: 30
   half: true
+  hyperlink: speakers/reuven_lerner
 
-- title: Introducing FinancePy - A Python library for Valuation and Risk Management
+- title: FinancePy, a library for Valuation and Risk Management
   track: 2
   date: 6th Dec
   time: "15:45"
@@ -241,6 +256,7 @@
   type: tutorial
   duration: 60
   full: true
+  hyperlink: speakers/dominic_okane
 
 - title: Tea Break
   track: all

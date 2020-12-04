@@ -3,3 +3,11 @@
 ---
 
 @import "main.scss";
+.content-wrapper {
+  margin-top: 8%;
+}
+@media (max-width: 576px){
+  .content-wrapper {
+    margin-top: 30%;
+  }
+}
