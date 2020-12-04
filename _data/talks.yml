@@ -3,8 +3,8 @@
 - title: Opening Note - Day 1
   track: all
   date: 5th Dec
-  time: "11:00"
-  duration: 5
+  time: "10:45"
+  duration: 20
 
 - title: Keynote
   track: all
@@ -24,12 +24,12 @@
   half: true
   hyperlink: speakers/venkata_pingali
 
-- title: TBA
+- title: Financial Tick Data Analysis with pandas
   track: 2
   date: 5th Dec
   time: "12:10"
-  speaker: TBA
-  type: talk
+  speaker: Yves Hilpisch and Jason Ramchandani
+  type: tutorial
   duration: 60
   full: true
 
@@ -120,6 +120,7 @@
   track: all
   date: 5th Dec
   time: "17:00"
+  type: keynote
   speaker: Paul Ganssle
   duration: 60
 
@@ -127,15 +128,15 @@
   track: all
   date: 5th Dec
   time: "18:00"
-  duration: 05
+  duration: 15
 
 # 6th Dec
 - title: Opening Note - Day 2
   track: all
   date: 6th Dec
-  time: "11:00"
+  time: "10:45"
   type: note
-  duration: 05
+  duration: 20
 
 - title: Keynote
   track: all
@@ -261,4 +262,4 @@
   date: 6th Dec
   time: "18:00"
   type: note
-  duration: 05
+  duration: 15

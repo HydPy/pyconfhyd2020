@@ -9,11 +9,22 @@
     width: 60%;
     filter: drop-shadow(0 0 10px #000);
   }
+  .cta {
+    padding: 1rem;
+    width: 18rem;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-wrapper img {
     width: 100%;
+  }
+  .hero-wrapper .cta {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    width: auto;
   }
 }
 // info section text

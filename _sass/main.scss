@@ -27,6 +27,7 @@ body {
 
 // main section - hero banner on homepage
 .main-hero {
+  margin-top: 5rem;
   background-image: url(../../assets/images/bg/BG-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,6 +41,9 @@ body {
 
 // schedule section styles
 @import "schedule";
+
+// community partners styles
+@import "community-partners";
 
 // style import for flexible template
 @import "flexible";
