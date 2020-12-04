@@ -95,10 +95,11 @@
             %}
           >
             <div class="talk-title">
-              <a {% if talk.hyperlink %}href="{{ talk.hyperlink }}" {% endif %}
-                >{{ talk.title }}</a
-              >
-              <small class="talk-speaker"> {{ talk.speaker }} </small>
+              {{ talk.title }}
+              <small class="talk-speaker">
+                <a {% if talk.hyperlink %} style="text-decoration: underline;" href="{{ talk.hyperlink }}" {% endif %}
+                >{{ talk.speaker }}</a>
+              </small>
             </div>
           </div>
           {% endfor %}
@@ -127,7 +128,8 @@
                 >{{ talk.title }}</a
               >
               <small class="talk-speaker">
-                {{ talk.speaker }} {% if talk.track and talk.track != 'all' %}|
+                <a {% if talk.hyperlink %} style="text-decoration: underline; display: inline;" href="{{ talk.hyperlink }}" {% endif %}
+                >{{ talk.speaker }}</a> {% if talk.track and talk.track != 'all' %} |
                 <strong>Track: {{ talk.track }} </strong> {% endif %}
               </small>
             </div>

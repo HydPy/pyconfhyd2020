@@ -3,6 +3,7 @@ name: Paul Ganssle
 title: CPython Core Developer
 website: https://ganssle.io/
 image: assets/images/speakers/pganssle-no-bg.png
+type: keynote
 ---
 
 Paul Ganssle is a software developer at Google, CPython core developer, maintainer of python-dateutil and setuptools and contributor to many other open source projects.
