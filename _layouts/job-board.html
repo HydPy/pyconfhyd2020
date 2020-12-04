@@ -1,0 +1,244 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head section  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyConf Hyderabad 2020</title>
+    <meta
+      name="description"
+      content="PyConf Hyderabad is an yearly tech conference about python, its projects and development."
+    />
+    <meta name="author" content="HydPy Hyderabad" />
+    <meta
+      name="keywords"
+      content="PyConf, python, 2020, Hyderabad, pyconf hyderabad 2020, data science, machine learning, conference, tech conference"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="title" content="PyConf Hyderabad 2020" />
+
+    <!-- meta open-graph -->
+    <meta property="og:title" content="PyConf Hyderabad 2020" />
+    <meta property="og:locale" content="en" />
+    <meta
+      property="og:description"
+      content="PyConf Hyderabad is an yearly tech conference about python, its projects and development."
+    />
+    <meta property="og:url" content="https://pyconf.hydpy.org/2020/" />
+    <meta property="og:type" content="website" />
+
+    <!-- meta twitter -->
+    <meta name="twitter:title" content="PyConf Hyderabad 2020" />
+    <meta
+      name="twitter:description"
+      content="PyConf Hyderabad is an yearly tech conference about python, its projects and development."
+    />
+    <meta name="twitter:url" content="https://pyconf.hydpy.org/2020/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@pyconfhyd" />
+    <meta name="twitter:creator" content="@pyconfhyd" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Preload assets-->
+    <link
+      rel="preload"
+      href="{{ 'assets/css/main.css' | relative_url }}"
+      as="style"
+    />
+
+    <!-- main CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="{{ 'favicons/apple-icon-57x57.png' | relative_url}}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="{{ 'favicons/apple-icon-60x60.png' | relative_url}}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="{{ 'favicons/apple-icon-72x72.png' | relative_url}}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="{{ 'favicons/apple-icon-76x76.png' | relative_url}}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="{{ 'favicons/apple-icon-114x114.png' | relative_url}}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="{{ 'favicons/apple-icon-120x120.png' | relative_url}}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="{{ 'favicons/apple-icon-144x144.png' | relative_url}}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="{{ 'favicons/apple-icon-152x152.png' | relative_url}}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ 'favicons/apple-icon-180x180.png' | relative_url}}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="{{ 'favicons/android-icon-192x192.png' | relative_url}}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ 'favicons/favicon-32x32.png' | relative_url}}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="{{ 'favicons/favicon-96x96.png' | relative_url}}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ 'favicons/favicon-16x16.png' | relative_url}}"
+    />
+    <link rel="manifest" href="{{ 'favicons/manifest.json' | relative_url }}" />
+    <meta name="msapplication-TileColor" content="#FFA500" />
+    <meta
+      name="msapplication-TileImage"
+      content="{{ site.url }}/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#FFA500" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/grid.min.css"
+      integrity="sha512-RtktBL0Hhw9K2e2rGLZGadK8cF6Q0wKxRUkfh4pJszwnarmh3GbqHCiLm3UZFA1dRiFqtPkVrcby0hXWsqoDNA=="
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/loader.min.css"
+      integrity="sha512-+6VqtNJxRmuo2S1AnpgaP6T2CtH5a9aCX2mBIl58uE5DMtxxT9O6JNt2MQvIJAD1CGgJ98ERIKhGJkcX1OArVg=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/card.min.css"
+      integrity="sha512-u5E5vOHVsB0blcZniDNfaRkTfqdgjxIgLX17YlG0vjQyos7Z7b1BXLuhHZbF2JOVRrfNNd8P6v7fw87JaFw/Rg=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/button.min.css"
+      integrity="sha512-OD0ScwZAE5PCg4nATXnm8pdWi0Uk0Pp2XFsFz1xbZ7xcXvapzjvcxxHPeTZKfMjvlwwl4sGOvgJghWF2GRZZDw=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.2/tabletop.min.js"
+      integrity="sha512-b849lLKA7DwH7d4U9wArzQVk4fIcp2UCcvRxkHy4JY/zsO0zwdvnp+xMPC6Ox4Lbfmwmr0iYsTeuJNbG5UeDzQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      #job-board {
+        text-align: left;
+        min-height: 40vh;
+        height: auto;
+      }
+      .card .description {
+        color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header section -->
+    {% include navbar.html %}
+
+    <section class="section flexible wrapper">
+      <div class="container">{{ content }}</div>
+    </section>
+
+    <!-- footer section -->
+    {% include footer.html %}
+
+    <!-- scripts include -->
+    <script type="text/javascript">
+      window.onload = function () {
+        Tabletop.init({
+          key: "1nP3k6apsfcuS0PX_DkXzAjG0evU6TZex8lXkQIjRgm4",
+          callback: (sheetData) => {
+            console.log(sheetData);
+            window.populateJobCards(sheetData);
+            window.toggleView();
+          },
+          simpleSheet: true,
+        });
+      };
+      function populateJobCards(jobData) {
+        let getJobCard = (job) => `
+        <div style="font-size: 1rem;" class="card">
+          <div class="content">
+            <div class="header">${job["Job Title"]}</div>
+            <a href=${job["Company Website"]}>
+              <div class="sub">${job["Company Name"]}</div>
+            </a>
+            <div>Location: ${job["Job Location"]}</div>
+            <div class="meta">${job["Job Type"]}</div>
+            <div class="description">
+              <p>${job["Company Description"]}</p>
+            </div>
+          </div>
+          <div class="extra content">
+            <a href="${job["Job Application Link"]}">
+              <button class="ui orange button">Apply</button>
+            </a>
+            <a href="mailto: ${job["Email Address"]}">
+              <button class="ui grey button">Email</button>
+            </a>
+          </div>
+        </div>
+        `;
+        let htmlString = "";
+        for (let job of jobData) {
+          htmlString += getJobCard(job);
+        }
+        document.querySelector(".ui.cards").innerHTML = htmlString;
+      }
+      function toggleView() {
+        document.querySelector(".ui.cards").removeAttribute("hidden");
+        document.querySelector(".ui.dimmer").setAttribute("hidden", "true");
+      }
+    </script>
+  </body>
+</html>
