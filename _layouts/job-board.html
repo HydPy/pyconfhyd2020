@@ -175,6 +175,9 @@ layout: compress
         min-height: 40vh;
         height: auto;
       }
+      .card.hidden {
+        display: none !important;
+      }
       .card .description {
         color: #000;
       }
@@ -207,7 +210,9 @@ layout: compress
       };
       function populateJobCards(jobData) {
         let getJobCard = (job) => `
-        <div style="font-size: 1rem;" class="card">
+        <div style="font-size: 1rem;" class="card ${
+          job["isApproved"] == "TRUE" ? "" : "hidden"
+        }">
           <div class="content">
             <div class="header">${job["Job Title"]}</div>
             <a href=${job["Company Website"]}>
