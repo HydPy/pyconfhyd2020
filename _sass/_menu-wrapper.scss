@@ -1,31 +1,100 @@
-.menu-wrapper {
-  width: 100%;
-  border-bottom: 0.1rem solid orange;
-  background-color: #032f4e;
-  top:0;
-  position: fixed;
-  height: 5rem;
-  z-index: 2;
-}
-
-
-.menu-wrapper nav {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.menu-wrapper nav a {
-  padding: 1.5rem 1.8125rem 1.625rem;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  color: orange;
+.menu-wrapper
+{width:100%;justify-content:space-between;align-items:center;border-bottom:0.3rem solid orange;background-color:#032f4e;top:0;position:fixed;z-index:3;display:flex;}
+.menu-wrapper img {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 0px 0px;
+  height:75px;
+  width:auto;
+  margin:.5rem;
   text-decoration: none;
 }
+.navbar-links ul{
+  margin:0;
+  padding:0;
+  display:flex;
+}
+.navbar-links li{
+  list-style:none;
+  font-size:19px;
+  font-family:"Montserrat", sans-serif;font-style:normal;
+  font-weight:50px;
+}
+.navbar-links li a{
+  text-decoration:none;
+  color:orange;
+  padding:1rem;
+  display:block;
+  line-height:22px;
+  font-weight:bold;
+}
 
-@media (max-width: 768px) {
-  .menu-wrapper nav a {
-    padding: 0.5rem 0.3rem;
+.toggle-button{
+  position:absolute;
+  top:34px;
+  right:2rem;
+  display:none;
+  flex-direction:column;
+  justify-content:space-between;
+  width:30px;
+  height:21px;
+
   }
+  label{
+    display:none;
+  }
+  #toggle{
+    display:none;
+  }
+  .toggle-button .bar{
+    height:3px;
+    width:100%;
+
+    background-color:orange;
+    border-radius:10px;
+}
+
+@media(max-width:900px){
+  label{
+    display:flex;
+  }
+.toggle-button{
+  display:flex;
+}
+.toggle-button:hover{
+    cursor: pointer
+}
+.navbar-links{
+  display:none;
+ width:100%;
+
+}
+.menu-wrapper{
+  flex-direction:column;
+  align-items:flex-start;
+
+
+}
+.navbar-links ul{
+  width: 100%;
+  flex-direction: column;
+
+
+}
+.navbar-links li{
+  text-align: center;
+}
+.navbar-links li a{
+  padding: .5rem 1rem;
+  line-height:23px;
+}
+.navbar-links li a:hover{
+  font-size:23px;
+}
+
+
+}
+#toggle:checked +.navbar-links {
+  display:flex;
 }
